@@ -52,16 +52,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.builder-container{
+.editor-container{
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to right, #9f7aea, #ed64a6, #fc8181);
   overflow: hidden;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
+  padding: 5px;
 }
