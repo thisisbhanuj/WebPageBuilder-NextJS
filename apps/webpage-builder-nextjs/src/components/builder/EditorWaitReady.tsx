@@ -1,4 +1,4 @@
-import GrapesJsEditor, { EditorProps } from 'grapesjs-nextjs/src/components';
+import GrapesJsEditor, { EditorProps } from 'gjs-next-wrapper/src/components';
 import { defaultEditorProps, slowStoragePlugin } from './common';
 import FullSpinner from './FullSpinner';
 

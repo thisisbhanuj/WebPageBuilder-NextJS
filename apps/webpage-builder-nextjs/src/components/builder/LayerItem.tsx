@@ -1,4 +1,4 @@
-import { useEditor } from 'grapesjs-nextjs/src/components';
+import { useEditor } from 'gjs-next-wrapper/src/components';
 import { mdiEyeOffOutline, mdiEyeOutline, mdiMenuDown } from '@mdi/js';
 import Icon from '@mdi/react';
 import type { Component } from 'grapesjs';

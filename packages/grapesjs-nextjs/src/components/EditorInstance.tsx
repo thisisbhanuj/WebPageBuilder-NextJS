@@ -32,7 +32,7 @@ export interface EditorProps extends React.HTMLProps<HTMLDivElement> {
      *    src: 'https://unpkg.com/grapesjs-blocks-basic',
      *    options: {}
      *  }
-     *  // plugin already loaded in the global scope (eg. loaded via CND in HTML)
+     *  // plugin already loaded in the global scope (eg. loaded via CDN in HTML)
      *  'grapesjs-plugin-forms',
      *  // plugin as a function
      *  myPlugin,
@@ -59,7 +59,7 @@ export interface EditorProps extends React.HTMLProps<HTMLDivElement> {
     /**
      * Avoid showing children of the editor until the editor is ready (mounted and loaded data from the Storage).
      */
-    waitReady?: boolean | React.ReactNode,
+    waitReady?: React.ReactNode,
 }
 
 const EditorInstance = memo(function({

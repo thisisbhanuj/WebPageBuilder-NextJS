@@ -1,4 +1,4 @@
-import { LayersResultProps, useEditor } from 'grapesjs-nextjs/src/components';
+import { LayersResultProps, useEditor } from 'gjs-next-wrapper/src/components';
 import type { Component, Editor } from 'grapesjs';
 import { useRef, useState } from 'react';
 import { cx } from './common';

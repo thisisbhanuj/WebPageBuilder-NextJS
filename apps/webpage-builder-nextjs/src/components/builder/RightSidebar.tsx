@@ -1,4 +1,4 @@
-import { BlocksProvider, LayersProvider, PagesProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'grapesjs-nextjs/src/components';
+import { BlocksProvider, LayersProvider, PagesProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'gjs-next-wrapper/src/components';
 import { mdiBrush, mdiLayers, mdiViewGridPlus, mdiTextBoxMultiple, mdiCog } from '@mdi/js';
 import Icon from '@mdi/react';
 import Tab from '@mui/material/Tab';
