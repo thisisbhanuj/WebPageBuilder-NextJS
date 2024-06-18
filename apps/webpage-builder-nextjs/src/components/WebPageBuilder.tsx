@@ -6,14 +6,15 @@ import 'grapesjs/dist/css/grapes.min.css';
 import { useCallback, useMemo, useState } from 'react';
 import { mdiCheckBold, mdiClose } from '@mdi/js';
 import Icon from '@mdi/react';
-import { EditorProps } from 'grapesjs-nextjs/src/components';
+import { EditorProps } from 'gjs-next-wrapper/src/components';
+
 
 import { getDateString } from '@/components/builder/common';
 import CustomEditor from '@/components/builder/CustomEditor';
 import DefaultEditor from '@/components/builder/DefaultEditor';
 import EditorWaitReady from '@/components/builder/EditorWaitReady';
 
-enum Examples {
+enum EditorEnum {
   Custom = 'Custom UI Editor',
   WaitReady = 'Editor wait Ready',
 }
@@ -23,7 +24,7 @@ function WebPageBuilder() {
   const [ready, setReady] =  useState<Editor>();
   const [projectData, setProjectData] =  useState<ProjectData>();
   const [projectDataDate, setProjectDataDate] =  useState<Date>();
-  const [selectedExample, setSelectedExample] =  useState(Examples.Custom);
+  const [selectedEditor, setSelectedEditor] =  useState(EditorEnum.Custom);
   const mountedIconCls = `inline-block ${editor ? 'text-green-400' : 'text-red-400'}`;
   const readyIconCls = `inline-block ${ready ? 'text-green-400' : 'text-red-400'}`;
 
@@ -34,26 +35,26 @@ function WebPageBuilder() {
   }, []);
 
   const exampleOptions = useMemo(() => (
-    Object.entries(Examples).map(([key, value]) => (
+    Object.entries(EditorEnum).map(([key, value]) => (
       <option key={key} value={value}>
         {value}
       </option>
     ))
   ), []);
 
-  const onExampleChange = (ev: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedExample(ev.target.value as Examples);
+  const onEditorChange = (ev: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedEditor(ev.target.value as EditorEnum);
     setEditor(undefined);
     setReady(undefined);
   };
 
   let EditorToRender = DefaultEditor;
 
-  switch (selectedExample) {
-    case Examples.Custom:
+  switch (selectedEditor) {
+    case EditorEnum.Custom:
       EditorToRender = CustomEditor;
       break;
-    case Examples.WaitReady:
+    case EditorEnum.WaitReady:
       EditorToRender = EditorWaitReady;
       break;
   }
@@ -66,8 +67,8 @@ function WebPageBuilder() {
         <div>
           <select
             className="rounded-sm bg-slate-700 p-1"
-            value={selectedExample}
-            onChange={onExampleChange}
+            value={selectedEditor}
+            onChange={onEditorChange}
           >
             {exampleOptions}
           </select>

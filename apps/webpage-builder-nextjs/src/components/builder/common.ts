@@ -1,4 +1,4 @@
-import { EditorProps } from 'grapesjs-nextjs/src/components';
+import { EditorProps } from 'gjs-next-wrapper/src/components';
 import type grapesjs from 'grapesjs';
 import type { Plugin, EditorConfig } from 'grapesjs';
 import { createTheme } from '@mui/material/styles';
@@ -38,23 +38,24 @@ export const plugins: EditorProps['plugins'] = [
 ];
 
 export const defaultOptions: EditorConfig = {
-    storageManager: false,
+    storageManager: {
+        type: 'local',
+        autosave: true,
+        autoload: true,
+        stepsBeforeSave: 1,
+        options: {
+            local: {
+                key: 'gjsProject',
+            },
+            storeComponents: true,
+            storeStyles: true,
+            storeHtml: true,
+            storeCss: true,
+        }
+    },
     assetManager: {
         assets: [
           'https://via.placeholder.com/350x250/78c5d6/fff',
-          'https://via.placeholder.com/350x250/459ba8/fff',
-          'https://via.placeholder.com/350x250/79c267/fff',
-          'https://via.placeholder.com/350x250/c5d647/fff',
-          'https://via.placeholder.com/350x250/f28c33/fff',
-          'https://via.placeholder.com/350x250/e868a2/fff',
-          'https://via.placeholder.com/350x250/cc4360/fff',
-          'https://via.placeholder.com/350x250/78c5d6/eee',
-          'https://via.placeholder.com/350x250/459ba8/eee',
-          'https://via.placeholder.com/350x250/79c267/eee',
-          'https://via.placeholder.com/350x250/c5d647/eee',
-          'https://via.placeholder.com/350x250/f28c33/eee',
-          'https://via.placeholder.com/350x250/e868a2/eee',
-          'https://via.placeholder.com/350x250/cc4360/eee',
         ],
     },
     undoManager: {
@@ -90,7 +91,7 @@ export const slowStoragePlugin: Plugin = (editor) => {
 
 export const defaultEditorProps: EditorProps = {
     grapesjs: window.grapesjs,
-    grapesjsCss: 'http://localhost:8080/dist/css/grapes.min.css',
+    grapesjsCss: 'https://unpkg.com/grapesjs/dist/css/grapes.min.css',
     plugins: plugins,
     options: defaultOptions,
 }

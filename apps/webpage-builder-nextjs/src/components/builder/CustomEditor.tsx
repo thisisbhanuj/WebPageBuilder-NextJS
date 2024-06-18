@@ -1,4 +1,4 @@
-import GrapesJsEditor, { AssetsProvider, Canvas, EditorProps, ModalProvider } from 'grapesjs-nextjs/src/components';
+import GrapesJsEditor, { AssetsProvider, Canvas, EditorProps, ModalProvider } from 'gjs-next-wrapper/src/components';
 import { ThemeProvider } from '@mui/material/styles';
 import { MAIN_BORDER_COLOR, customTheme, defaultEditorProps } from './common';
 import Topbar from './Topbar';
@@ -23,7 +23,9 @@ export default function CustomEditor(props: Readonly<Partial<EditorProps>>) {
                 </div>
                 <ModalProvider>
                     {({ open, title, content, close }) => (
-                        <CustomModal open={open} title={title} children={content} close={close}/>
+                        <CustomModal open={open} title={title} close={close}>
+                            {content}
+                        </CustomModal>
                     )}
                 </ModalProvider>
                 <AssetsProvider>

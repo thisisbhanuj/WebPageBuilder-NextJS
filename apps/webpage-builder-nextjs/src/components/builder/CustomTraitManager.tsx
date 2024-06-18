@@ -1,4 +1,4 @@
-import { TraitsResultProps } from 'grapesjs-nextjs/src/components';
+import { TraitsResultProps } from 'gjs-next-wrapper/src/components';
 import TraitPropertyField from './TraitPropertyField';
 
 export default function CustomTraitManager({ traits }: Omit<TraitsResultProps, 'Container'>) {

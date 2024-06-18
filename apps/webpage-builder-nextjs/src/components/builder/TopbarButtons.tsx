@@ -1,4 +1,4 @@
-import { useEditor } from 'grapesjs-nextjs/src/components';
+import { useEditor } from 'gjs-next-wrapper/src/components';
 import { mdiArrowULeftTop, mdiArrowURightTop, mdiBorderRadius, mdiFullscreen, mdiXml } from '@mdi/js';
 import Icon from '@mdi/react';
 import { useEffect, useState } from 'react';

@@ -1,4 +1,4 @@
-import GrapesJsEditor, { AssetsProvider, BlocksProvider, EditorProps, LayersProvider, ModalProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'grapesjs-nextjs/src/components';
+import GrapesJsEditor, { AssetsProvider, BlocksProvider, EditorProps, LayersProvider, ModalProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'gjs-next-wrapper/src/components';
 import { ThemeProvider } from '@mui/material/styles';
 
 import { customTheme, defaultEditorProps } from './common';
@@ -62,7 +62,9 @@ export default function DefaultCustomEditor(props: Partial<EditorProps>) {
                 </AssetsProvider>
                 <ModalProvider>
                     {({ open, title, content, close }) => (
-                        <CustomModal open={open} title={title} children={content} close={close}/>
+                        <CustomModal open={open} title={title} close={close}>
+                            {content}
+                        </CustomModal>
                     )}
                 </ModalProvider>
             </GrapesJsEditor>
