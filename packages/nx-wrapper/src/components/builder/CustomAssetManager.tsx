@@ -1,4 +1,4 @@
-import { AssetsResultProps, useEditor } from 'gjs-next-wrapper/src/components';
+import { AssetsResultProps, useEditor } from 'nxg-core/src/components';
 import { mdiClose } from '@mdi/js';
 import Icon from '@mdi/react';
 import type { Asset } from 'grapesjs';

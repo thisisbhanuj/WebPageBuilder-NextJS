@@ -6,8 +6,7 @@ import 'grapesjs/dist/css/grapes.min.css';
 import { useCallback, useMemo, useState } from 'react';
 import { mdiCheckBold, mdiClose } from '@mdi/js';
 import Icon from '@mdi/react';
-import { EditorProps } from 'gjs-next-wrapper/src/components';
-
+import { EditorProps } from 'nxg-core/src/components';
 
 import { getDateString } from '@/components/builder/common';
 import CustomEditor from '@/components/builder/CustomEditor';

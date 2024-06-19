@@ -1,4 +1,4 @@
-import GrapesJsEditor, { AssetsProvider, Canvas, EditorProps, ModalProvider } from 'gjs-next-wrapper/src/components';
+import GrapesJsEditor, { AssetsProvider, Canvas, EditorProps, ModalProvider } from 'nxg-core/src/components';
 import { ThemeProvider } from '@mui/material/styles';
 import { MAIN_BORDER_COLOR, customTheme, defaultEditorProps } from './common';
 import Topbar from './Topbar';

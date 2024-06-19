@@ -1,4 +1,4 @@
-import GrapesJsEditor, { AssetsProvider, BlocksProvider, EditorProps, LayersProvider, ModalProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'gjs-next-wrapper/src/components';
+import GrapesJsEditor, { AssetsProvider, BlocksProvider, EditorProps, LayersProvider, ModalProvider, SelectorsProvider, StylesProvider, TraitsProvider } from 'nxg-core/src/components';
 import { ThemeProvider } from '@mui/material/styles';
 
 import { customTheme, defaultEditorProps } from './common';

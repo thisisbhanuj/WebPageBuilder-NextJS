@@ -1,4 +1,4 @@
-import { DevicesProvider, WithEditor } from 'gjs-next-wrapper/src/components';
+import { DevicesProvider, WithEditor } from 'nxg-core/src/components';
 import FormControl from '@mui/material/FormControl';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';

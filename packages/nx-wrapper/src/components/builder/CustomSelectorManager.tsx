@@ -1,4 +1,4 @@
-import { SelectorsResultProps } from 'gjs-next-wrapper/src/components';
+import { SelectorsResultProps } from 'nxg-core/src/components';
 import { mdiClose, mdiPlus } from '@mdi/js';
 import Icon from '@mdi/react';
 import FormControl from '@mui/material/FormControl';

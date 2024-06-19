@@ -1,4 +1,4 @@
-import { PagesResultProps } from 'gjs-next-wrapper/src/components';
+import { PagesResultProps } from 'nxg-core/src/components';
 import { BTN_CLS, MAIN_BORDER_COLOR, cx } from './common';
 import Icon from '@mdi/react';
 import { mdiDelete } from '@mdi/js';

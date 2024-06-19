@@ -1,4 +1,4 @@
-import { EditorProps } from 'gjs-next-wrapper/src/components';
+import { EditorProps } from 'nxg-core/src/components';
 import type grapesjs from 'grapesjs';
 import type { Plugin, EditorConfig } from 'grapesjs';
 import { createTheme } from '@mui/material/styles';

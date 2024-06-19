@@ -1,4 +1,4 @@
-import { BlocksResultProps } from 'gjs-next-wrapper/src/components';
+import { BlocksResultProps } from 'nxg-core/src/components';
 import { MAIN_BORDER_COLOR, cx } from './common';
 
 export type CustomBlockManagerProps = Pick<BlocksResultProps, 'mapCategoryBlocks' | 'dragStart' | 'dragStop'>;
