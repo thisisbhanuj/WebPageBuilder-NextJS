@@ -1,0 +1,133 @@
+{
+    "assets": [
+        {
+            "type": "image",
+            "src": "https://via.placeholder.com/350x250/78c5d6/fff",
+            "unitDim": "px",
+            "height": 0,
+            "width": 0
+        }
+    ],
+    "styles": [
+        {
+            "selectors": [
+                "#i7ex"
+            ],
+            "style": {
+                "padding": "25px",
+                "float": "none",
+                "position": "relative",
+                "margin": "10px 0px 0px 0px"
+            }
+        },
+        {
+            "selectors": [
+                "#imqu"
+            ],
+            "style": {
+                "padding": "20px"
+            }
+        }
+    ],
+    "pages": [
+        {
+            "frames": [
+                {
+                    "component": {
+                        "type": "wrapper",
+                        "stylable": [
+                            "background",
+                            "background-color",
+                            "background-image",
+                            "background-repeat",
+                            "background-attachment",
+                            "background-position",
+                            "background-size"
+                        ],
+                        "attributes": {
+                            "id": "iref"
+                        },
+                        "components": [
+                            {
+                                "type": "text",
+                                "attributes": {
+                                    "id": "i7ex"
+                                },
+                                "components": [
+                                    {
+                                        "type": "textnode",
+                                        "content": "Element A"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "text",
+                                "classes": [
+                                    "example",
+                                    "example-a"
+                                ],
+                                "components": [
+                                    {
+                                        "type": "textnode",
+                                        "content": "Element B"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributes": {
+                                    "id": "imqu"
+                                },
+                                "components": [
+                                    {
+                                        "type": "text",
+                                        "classes": [
+                                            "example-b1"
+                                        ],
+                                        "components": [
+                                            {
+                                                "type": "textnode",
+                                                "content": "Element B1"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "classes": [
+                                            "example-b2"
+                                        ],
+                                        "components": [
+                                            {
+                                                "type": "textnode",
+                                                "content": "Element B2"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "components": [
+                                            {
+                                                "type": "textnode",
+                                                "content": "Element B3"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "text",
+                                "components": [
+                                    {
+                                        "type": "textnode",
+                                        "content": "Element C"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "id": "CBphYqwgqaTlnhOL"
+                }
+            ],
+            "id": "KXT3QZjWje9RXweF"
+        }
+    ]
+}

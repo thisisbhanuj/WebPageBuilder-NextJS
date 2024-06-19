@@ -12,6 +12,7 @@ import { getDateString } from '@/components/builder/common';
 import CustomEditor from '@/components/builder/CustomEditor';
 import DefaultEditor from '@/components/builder/DefaultEditor';
 import EditorWaitReady from '@/components/builder/EditorWaitReady';
+import Link from 'next/link';
 
 enum EditorEnum {
   Custom = 'Custom UI Editor',
@@ -87,6 +88,11 @@ function WebPageBuilder() {
               path={ready ? mdiCheckBold : mdiClose}
               className={readyIconCls}
             />
+        </div>
+        <div className="flex gap-2 items-center">
+            <Link href="/converter">
+              Convert
+            </Link>
         </div>
         {
           !!projectDataDate &&
