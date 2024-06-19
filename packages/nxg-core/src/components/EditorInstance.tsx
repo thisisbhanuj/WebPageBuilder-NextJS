@@ -78,7 +78,7 @@ const EditorInstance = memo(function({
 }: EditorProps) {
   const { setEditor } = useEditorInstance();
   const editorOptions = useEditorOptions();
-  const [isEditorReady, setEditorReady] = useState(false);
+  const [isEditorReady, setIsEditorReady] = useState(false);
   const editorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -157,7 +157,7 @@ const EditorInstance = memo(function({
       }
 
       editor.onReady(() => {
-        setEditorReady(true);
+        setIsEditorReady(true);
         onReady?.(editor!);
       });
     }
@@ -206,7 +206,9 @@ const EditorInstance = memo(function({
     <>
       {
         waitReady && !isEditorReady ?
-          <div className={editorCls} style={styleRes} children={waitReady}/>
+          <div className={editorCls} style={styleRes} >
+            { waitReady }
+          </div>
         : null
       }
       <div {...rest} ref={editorRef} className={editorCls} style={styleEditorRes}>
