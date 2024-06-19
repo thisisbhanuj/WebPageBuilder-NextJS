@@ -1,4 +1,4 @@
-import GrapesJsEditor, { EditorProps } from 'gjs-next-wrapper/src/components';
+import GrapesJsEditor, { EditorProps } from 'nxg-core/src/components';
 import { defaultEditorProps } from './common';
 
 export default function DefaultEditor(props: Partial<EditorProps>) {

@@ -1,4 +1,4 @@
-import { StylesResultProps } from 'gjs-next-wrapper/src/components';
+import { StylesResultProps } from 'nxg-core/src/components';
 import { mdiMenuDown } from '@mdi/js';
 import Icon from '@mdi/react';
 import Accordion from '@mui/material/Accordion';

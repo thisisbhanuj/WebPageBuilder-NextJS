@@ -1,4 +1,4 @@
-import { useEditor } from "gjs-next-wrapper/src/components";
+import { useEditor } from "nxg-core/src/components";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
 import FormControl from "@mui/material/FormControl";

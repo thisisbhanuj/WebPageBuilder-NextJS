@@ -1,4 +1,4 @@
-import { useEditor } from "gjs-next-wrapper/src/components";
+import { useEditor } from "nxg-core/src/components";
 import { mdiArrowDownDropCircle, mdiArrowUpDropCircle, mdiClose, mdiDelete, mdiPlus } from "@mdi/js";
 import Icon from "@mdi/react";
 import FormControl from "@mui/material/FormControl";

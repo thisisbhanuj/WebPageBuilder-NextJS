@@ -1,4 +1,4 @@
-import { TraitsResultProps } from 'gjs-next-wrapper/src/components';
+import { TraitsResultProps } from 'nxg-core/src/components';
 import TraitPropertyField from './TraitPropertyField';
 
 export default function CustomTraitManager({ traits }: Omit<TraitsResultProps, 'Container'>) {
