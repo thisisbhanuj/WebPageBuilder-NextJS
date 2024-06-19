@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "start": "turbo start --filter=nx-wrapper",
+    "dev": "turbo dev --filter=nx-wrapper",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
