@@ -1,0 +1,9 @@
+{
+    "name": "typescript-config",
+    "version": "1.0.0",
+    "description": "A simple TypeScript configuration",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
+}

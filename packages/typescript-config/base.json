@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "TypeScript Config",
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": true,
+        "isolatedModules": true,
+        "incremental": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["dom", "dom.iterable", "es2022", "esnext"],
+        "module": "es2022",
+        "moduleDetection": "force",
+        "resolveJsonModule": true,
+        "noUncheckedIndexedAccess": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "target": "es2022",
+    }
+}
+  
